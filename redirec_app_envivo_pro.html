@@ -12,7 +12,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            margin: 20;
             font-family: Arial, sans-serif;
         }
         /* Estilos para el botón */
@@ -22,13 +22,29 @@
             margin-top: 10px; /* Espacio entre el título y el botón */
             cursor: pointer;
         }
+
+         /* Estilos para el botón */
+         .blue-button {
+            background-color: #007bff; /* Color azul */
+            color: white; /* Color de texto blanco */
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px; /* Espacio entre el título y el botón */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Transición de color suave */
+        }
+        .blue-button:hover {
+            background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+        }
     </style>
 </head>
 <body>
     <h1>Esta app ya no estará, pero puedes seguir disfrutando de los partidos en la otra app: Futbol en vivo total, click en el boton de aqui abajo.</h1>
     <h2> Tambien puedes ir al menu Mas de la app y dar click en descargar la nueva app</h2>
     <h2> </h2>
-    <button onclick="window.open('https://play.google.com/store/apps/details?id=television.peruanaenvivo', '_blank')">
+    <button class="blue-button" onclick="window.open('https://play.google.com/store/apps/details?id=television.peruanaenvivo', '_blank')">
         Descargar: Futbol en vivo total
     </button>
 </body>
